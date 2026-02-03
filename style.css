@@ -1,0 +1,79 @@
+/* =========================
+   The Salon Experience - Style
+   Sage + Crème Palette
+========================= */
+
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background-color: #f5f3ef; /* soft crème */
+  color: #3a4a3f; /* sage dark */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #b8c4b5; /* soft sage */
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #f5f3ef;
+  margin: 0;
+}
+
+nav {
+  background-color: #d8e1d6; /* lighter sage */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  margin: 10px 15px;
+  text-decoration: none;
+  color: #3a4a3f;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #6b7c68;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #3a4a3f;
+}
+
+button, .btn {
+  background-color: #b8c4b5;
+  color: #f5f3ef;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+button:hover, .btn:hover {
+  background-color: #6b7c68;
+}
+
+footer {
+  background-color: #b8c4b5;
+  color: #f5f3ef;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
