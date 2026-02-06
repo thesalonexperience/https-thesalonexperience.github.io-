@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Book Your Salon Experience</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  font-family: Georgia, serif;
+  background:#f7f6f2;
+  color:#2f3e34;
+  padding:30px;
+  text-align:center;
+}
+h1 {
+  margin-bottom:10px;
+}
+p {
+  font-size:1em;
+  margin-bottom:25px;
+}
+.button {
+  display:block;
+  margin:15px auto;
+  padding:14px 26px;
+  background:#8fae9e;
+  color:white;
+  text-decoration:none;
+  border-radius:30px;
+  max-width:320px;
+}
+.secondary {
+  background:#6f8f80;
+}
+.notice {
+  font-size:0.9em;
+  margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1 id="serviceName">Your Salon Experience</h1>
+<p>Select how you would like to book your journey.</p>
+
+<a class="button" href="SALON_TIDYCAL_LINK">Book Your Salon Experience</a>
+
+<div id="houseCall">
+  <a class="button secondary" href="HOUSECALL_TIDYCAL_LINK">Book Your House Call Experience</a>
+</div>
+
+<p class="notice">
+Questions before booking?<br>
+<a href="sms:15024144476">Text us here</a>
+</p>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const service = params.get("service");
+const noHouseCall = ["Skin Pampering", "Lash Experience"];
+
+if (service) {
+  document.getElementById("serviceName").innerText = service;
+}
+
+if (noHouseCall.includes(service)) {
+  document.getElementById("houseCall").style.display = "none";
+}
+</script>
+
+</body>
+</html>
