@@ -1,0 +1,26 @@
+body {
+  font-family: serif;
+  background: #f7f3ef;
+  color: #3b2f2f;
+  padding: 20px;
+}
+
+a {
+  display: block;
+  padding: 12px;
+  margin: 8px 0;
+  background: #e8dccf;
+  text-decoration: none;
+  color: #000;
+  border-radius: 8px;
+}
+
+.book-btn {
+  background: #3b2f2f;
+  color: #fff;
+  text-align: center;
+}
+
+.secondary {
+  background: #8c6d5c;
+}
