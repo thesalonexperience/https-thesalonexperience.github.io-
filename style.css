@@ -24,3 +24,25 @@ a {
 .secondary {
   background: #8c6d5c;
 }
+/* Luxury panels */
+.section {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 24px;
+  margin: 24px auto;
+  border-radius: 18px;
+  max-width: 900px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+}
+
+/* Section titles */
+.section h2 {
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+/* Soft divider */
+.divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #c8b6a6, transparent);
+  margin: 30px 0;
+}
