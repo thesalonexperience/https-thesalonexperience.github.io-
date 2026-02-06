@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book Your Experience</title>
+<link rel="stylesheet" href="style.css">
+<script>
+const params = new URLSearchParams(window.location.search);
+window.onload = () => {
+  document.getElementById("serviceName").innerText =
+    params.get("service") || "Your Selected Service";
+};
+</script>
+</head>
+
+<body>
+
+<h1 id="serviceName"></h1>
+
+<p>Choose how you’d like to enjoy your luxury salon journey.</p>
+
+<a class="book-btn" href="YOUR-TIDYCAL-SALON-LINK">Book Salon Experience</a>
+
+<a class="book-btn secondary" href="YOUR-TIDYCAL-HOUSECALL-LINK">
+Book House Call Experience
+</a>
+
+<label class="policy-check">
+<input type="checkbox" required>
+I agree to the <a href="policies.html">policies</a>
+</label>
+
+</body>
+</html>
